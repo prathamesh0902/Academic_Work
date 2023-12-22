@@ -1,0 +1,20 @@
+Word2vec implementation
+
+Note that in the `forward` function of Word2Vec, suppose the shape of the target embedding is `(batch_size, 1, d)` and the shape of the context embedding is `(batch_size, n, d)`. To correctly use `torch.bmm`, the shape of the context embedding should be converted into `(batch_size, d, n)`. You can use `.transpose` to do so. 
+
+
+Word Vector Exploration
+
+Problem 7 can already demonstrate that your model is explainable. Though you're also welcome to further analyze your model after solving the saving and loading issue :)
+
+
+Attention-based Classifier Implementation (Code)
+
+
+Sentiment Classification Performance (CodaLab)
+
+
+Prob. 19: Frozen Embeddings Eval
+
+
+Prob 21: Attention Analysis

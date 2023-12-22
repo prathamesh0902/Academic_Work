@@ -1,0 +1,28 @@
+Numpy Logistic Regression Implementation
+
+1. Note that we're including a minimum word frequency threshold (2) when constructing the text vectors.
+2. Note that for linear regression, we often include a "caveat column" as introduced in the handout. This is compared to the `bias` term as in `torch.nn.Linear` and will need to implement manually in this part. 
+
+
+PyTorch Logistic Regression Implementation
+
+1. Note to use the `train()` and `eval()` modes for models to separate different phases in ML. Some modules may behave differently in different modes.
+2. Note that in SGD, in each step during training, we would randomly sample a data point for calculating the loss and gradient. The current implementation is GD, where we take the whole dataset and calculate an "average" gradient based on it. 
+
+
+Logistic Regression Performance (Kaggle)
+
+Because there is no submission on Kaggle after we change the evaluation metric, so I take the F1 score on the dev set from your Jupyter notebook (0.20454545454545459). Please correct me if you've achieved a higher F1 score. 
+Full points : F1 > 25%
+80% points: 15% > F1 > 25%
+50% points: 0 % > F1 > 15%
+0 points: 0 F1 or no submission
+
+
+Pytorch Regression Performance (Kaggle)
+Full points : F1 > 25%
+80% points: 15% > F1 > 25%
+50% points: 0 % > F1 > 15%
+0 points: 0 F1 or no submission
+
+Write-up (plots, description, etc.)
